@@ -17,9 +17,9 @@ public class SceneController : MonoBehaviour
         
     }
 
-    public void LoadScene()
+    public void LoadScene(string scene)
     {
         // メインシーンのロード
-        SingletonMonoBehaviour<SceneFade>.Instance.LoadLevel("main");
+        SingletonMonoBehaviour<SceneFade>.Instance.LoadLevel(scene);
     }
 }
